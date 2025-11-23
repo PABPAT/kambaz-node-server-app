@@ -14,7 +14,7 @@ export default function AssignmentsRoutes(app, db) {
     const updateAssignment = async (req, res) => {
         const { assignmentId } = req.params;
         const assignmentUpdates = req.body;
-        const status = await dao.updateModule(assignmentId, assignmentUpdates);
+        const status = await dao.updateAssignment(assignmentId, assignmentUpdates);
         res.send(status);
     }
 

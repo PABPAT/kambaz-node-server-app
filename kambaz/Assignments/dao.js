@@ -13,7 +13,7 @@ export default function AssignmentsDao(db) {
         const { assignments } = db;
         const assignment = assignments.find((assignment) => assignment._id === assignmentId);
         Object.assign(assignment, assignmentUpdates);
-        return module;
+        return assignment;
     }
     function findAssignmentsForCourse(courseId) {
         const { assignments } = db;
