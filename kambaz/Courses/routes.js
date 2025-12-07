@@ -41,5 +41,5 @@ export default function CourseRoutes(app, db) {
     app.delete("/api/courses/:courseId", deleteCourse)
     app.get("/api/users/:userId/courses", findCoursesForEnrolledUser);
     app.get("/api/courses", findAllCourses);
-    app.post("/api/user/current/courses", createCourse);
+    app.post("/api/users/current/courses", createCourse);
 }
